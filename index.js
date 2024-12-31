@@ -1,11 +1,10 @@
 function signup(userName){
     let usernames = ["Job","Alice","Jane", "Bob"]
-    for(let i =0;i<usernames.length;i++ ){
-        if(usernames==usernames[i]){
+    
+        if(usernames.includes(userName)){
             return "User Already Registered, Please login"
         } else {
             usernames.push(`${userName}`)
-            return "Signup Successful, Please login"
+            return "Signup Successful, Please login";
         }
     }
-}
